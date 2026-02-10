@@ -2,52 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Larsen Porter is a photographer, artist, and man based in Santa Barbara">
-    <meta name="keywords" content="internet art, coding, html, online">
-    <meta name="author" content="Larsen Porter">
+    <meta name="description" content="Larsen Porter — photography & internet art">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first website!</title>
+    <title>Larsen Porter</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            max-width: 650px;
+            font-size: 1rem;
+        }
+
+        /* hero image */
+        .hero img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        /* photo grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+
+        .grid img:hover {
+            transform: scale(1.03);
+        }
+
+        a {
+            color: #111;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 80px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>welcome to my website</h1>
-    <p>I love Websites!.</p>
+    <div class="container">
 
-    <h2>about me: larsen</h2>
+        <h1>hi, i’m larsen</h1>
+        <p>
+            I’m a photographer interested in time, movement, and how images can hold
+            moments that feel unstable or unfinished.
+        </p>
 
-    <!-- Clickable GIF #1 -->
-    <a href="https://i.imgur.com/yur3nzm.gif" target="_blank">
-        <img src="https://i.imgur.com/yur3nzm.gif" alt="photo of me gif"
-             style="width:200px; height:400px;">
-    </a>
+        <!-- HERO IMAGE -->
+        <div class="hero">
+            <img src="https://i.imgur.com/yur3nzm.gif" alt="long exposure self portrait">
+        </div>
 
-    <p>
-        I am a photographer who loves taking photos and editing them on photoshop.
-        Let me know if you need photos.
-    </p>
+        <h2>photography</h2>
 
-    <!-- Clickable GIF #2 -->
-    <a href="https://i.imgur.com/wsW8Ojq.gif" target="_blank">
-        <img src="https://i.imgur.com/wsW8Ojq.gif" alt="second gif"
-             style="width:200px; height:200px;">
-    </a>
+        <!-- PHOTO GRID -->
+        <div class="grid">
+            <img src="https://i.imgur.com/wsW8Ojq.gif" alt="photo 1">
+            <img src="https://i.imgur.com/g1rEdwM.jpeg" alt="photo 2">
+            <img src="https://i.imgur.com/YDL8GdH.jpeg" alt="photo 3">
+            <img src="https://i.imgur.com/qoAFACC.jpeg" alt="photo 4">
+            <img src="https://i.imgur.com/9BywulX.jpeg" alt="photo 5">
+            <img src="https://i.imgur.com/tJhT1Yp.jpeg" alt="photo 6">
+        </div>
 
-    <h2>things i like to do</h2>
-    <ul>
-        <li>go on bike rides, surf, ski, mountain bike, exercise and have FUN</li>
-        <li>
-            listen to
-            <a href="https://www.youtube.com/watch?v=Man4Xw8Xypo" target="_blank">
-                hope tala
-            </a>
-        </li>
-        <li>hang out with my friends</li>
-    </ul>
+        <h2>things i like</h2>
+        <p>
+            biking, surfing, skiing, long exposures, editing late at night,
+            and music that feels like motion.
+        </p>
 
-    <h2>contact</h2>
-    <p>
-        if you want to reach me, you can email me:
-        <a href="mailto:larsen@ucsb.edu">here</a>
-    </p>
+        <h2>contact</h2>
+        <p>
+            email me <a href="mailto:larsen@ucsb.edu">here</a><br>
+            or find me on instagram.
+        </p>
+
+        <footer>
+            © Larsen Porter
+        </footer>
+
+    </div>
 </body>
 </html>
